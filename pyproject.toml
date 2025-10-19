@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devops-merge-styles"
+version = "0.1.0"
+description = "Minimal calculator with Tkinter UI and unit tests for CI merge styles demo."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Juan Soto" }]
+dependencies = []
+
+[tool.setuptools]
+packages = ["calculator"]
+
+[project.scripts]
+calculator-app = "app:main"
