@@ -15,7 +15,8 @@ class Calculator:
         return left - right
 
     def multiply(self, left: float, right: float) -> float:
-        return left * right
+        result = left * right
+        return result
 
     def divide(self, left: float, right: float) -> float:
         if right == 0:
