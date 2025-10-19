@@ -12,7 +12,8 @@ class Calculator:
         return num1 + num2
 
     def subtract(self, left: float, right: float) -> float:
-        return left - right
+        result = left - right
+        return result
 
     def multiply(self, left: float, right: float) -> float:
         return left * right
