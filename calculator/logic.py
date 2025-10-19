@@ -7,7 +7,8 @@ class Calculator:
     """Provide elementary arithmetic operations."""
 
     def add(self, left: float, right: float) -> float:
-        return left + right
+        result = left + right
+        return result
 
     def subtract(self, left: float, right: float) -> float:
         return left - right
