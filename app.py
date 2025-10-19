@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from functools import partial
 import tkinter as tk
 from tkinter import ttk
 
@@ -57,7 +58,7 @@ class CalculatorApp:
                 if label == "Clear":
                     command = self._clear_active_entry
                 else:
-                    command = lambda value=label: self._on_keypad_press(value)
+                    command = partial(self._on_keypad_press, label)
                 ttk.Button(
                     keypad_frame,
                     text=label,
